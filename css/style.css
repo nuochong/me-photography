@@ -1160,6 +1160,13 @@ div#portfoliolist {
   .logo {
     width: 18%;
   }
+  .header{
+    padding-left: 2em;
+    padding-right: 1.5em;
+  }
+  .header .logo span{
+    font-size: 2.1em;
+  }
   ul.navig li span:nth-child(1) {
     margin: 0 15px;
   }
