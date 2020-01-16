@@ -1,460 +1,464 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <title>影集</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="keywords" content="" />
-  <script type="application/x-javascript">
+  <head>
+    <title>影集</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <script type="application/x-javascript">
       addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
     </script>
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
-  <link href="css/style.css" rel="stylesheet" type="text/css" />
-  <script src="js/jquery-1.11.0.min.js"></script>
-  <!---- start-smoth-scrolling---->
-  <script type="text/javascript" src="js/move-top.js"></script>
-  <script type="text/javascript" src="js/easing.js"></script>
-  <script type="text/javascript">
-    jQuery(document).ready(function ($) {
-      $('.scroll').click(function (event) {
-        event.preventDefault();
-        $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <!---- start-smoth-scrolling---->
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $('.scroll').click(function(event) {
+          event.preventDefault();
+          $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+        });
       });
-    });
-  </script>
+    </script>
 
-  <!--start-smoth-scrolling-->
-  <!--animated-css-->
-  <link href="css/animate.css" rel="stylesheet" type="text/css" media="all" />
-  <script src="js/wow.min.js"></script>
-  <script>
-    new WOW().init();
-  </script>
-  <!--animated-css-->
-
-  <style>
-    .mix_all {
-      display: inline-block;
-      opacity: 1;
-    }
-    .logo span{
-      font-size: 40px;
-      color: white;
-    }
-  </style>
-</head>
-
-<body>
-  <!--start-banner-->
-  <div class="banner" id="home">
-    <div id="top" class="callbacks_container">
-      <ul class="rslides" id="slider4">
-        <li>
-          <div class="banner-1"></div>
-        </li>
-        <li>
-          <div class="banner-2"></div>
-        </li>
-        <li>
-          <div class="banner-3"></div>
-        </li>
-      </ul>
-    </div>
-    <div class="clearfix"></div>
-    <div class="header">
-      <div class="logo">
-        <span>影集</span>
-        <!-- <a href="index.html"><img src="images/logo.png" alt="" /></a> -->
-      </div>
-      <div class="navigation">
-        <span class="menu"></span>
-        <ul class="navig">
-          <li><a href="index.html" class="scroll">主页</a><span>|</span></li>
-          <li><a href="#portfolio" class="scroll">作品展示</a><span>|</span></li>
-          <li><a href="#contact" class="scroll">摄影漫谈</a></li>
+    <!--start-smoth-scrolling-->
+    <!--animated-css-->
+    <link href="css/animate.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <!--animated-css-->
+    <style>
+      .mix_all {
+        display: inline-block;
+        opacity: 1;
+      }
+      .logo span {
+        font-size: 2.5em;
+        color: white;
+      }
+      #toTop {
+        display: block;
+      }
+      #toTopHover {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <!--start-banner-->
+    <div class="banner" id="home">
+      <div id="top" class="callbacks_container">
+        <ul class="rslides" id="slider4">
+          <li>
+            <div class="banner-1"></div>
+          </li>
+          <li>
+            <div class="banner-2"></div>
+          </li>
+          <li>
+            <div class="banner-3"></div>
+          </li>
         </ul>
       </div>
       <div class="clearfix"></div>
-    </div>
-    <div class="banner-bottom">
-      <ul>
-        <li>
-          <a
-            href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?summary=诺冲的影集&url=https://photography.luzhaoyang.com&pics=picurl"><span
-              class="twt"> </span></a>
-        </li>
-        <li>
-          <a
-            href="http://v.t.sina.com.cn/share/share.php?title=诺冲的影集&url=https://photography.luzhaoyang.com&content=utf-8&sourceUrl=url&pic=picurl"><span
-              class="t"> </span></a>
-        </li>
-        <li>
-          <a
-            href="http://connect.qq.com/widget/shareqq/index.html?url=https://photography.luzhaoyang.com&sharesource=qzone&title=诺冲的影集&pics=分享图片地址&summary=分享描述&desc=你的分享简述`"><span
-              class="g"> </span></a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <!-- script-for-menu -->
-  <script>
-    $('span.menu').click(function () {
-      $(' ul.navig').slideToggle('slow', function () { });
-    });
-  </script>
-  <!-- script-for-menu -->
-  <!--Slider-Starts-Here-->
-  <script src="js/responsiveslides.min.js"></script>
-  <script>
-    // You can also use "$(window).load(function() {"
-    $(function () {
-      // Slideshow 4
-      $('#slider4').responsiveSlides({
-        auto: true,
-        pager: false,
-        nav: true,
-        speed: 500,
-        namespace: 'callbacks',
-        before: function () {
-          $('.events').append('<li>before event fired.</li>');
-        },
-        after: function () {
-          $('.events').append('<li>after event fired.</li>');
-        }
-      });
-    });
-  </script>
-  <!--End-slider-script-->
-  <!--end-banner-->
-  <!--start-free-->
-  <div class="free wow bounce" data-wow-delay="0.1s">
-    <div class="container">
-      <div class="free-main">
-        <h1>对焦 她的爱</h1>
-        <p>
-          <sup><img src="images/quote-1.png" alt="" /></sup>
-          港湾晚灯 山顶破晓 摘下怀念 记住美妙
-          <sub><img src="images/quote-2.png" alt="" /></sub>
-        </p>
-        <p>
-          <sup><img src="images/quote-1.png" alt="" /></sup>
-          留住 温度 速度 温柔和愤怒 凝住 今日 怎样 好 捉紧 生命浓度 坦白流露 感情和态度 停下时光 静止衰老妙
-          <sub><img src="images/quote-2.png" alt="" /></sub>
-        </p>
-        <p>
-          <sup><img src="images/quote-1.png" alt="" /></sup>
-          音乐 话剧 诗词和舞蹈 揉合 生命 千样好 摄入相部 绚烂如电 虚幻如雾 哀愁和仰慕 游乐人间 活得好 谈何容易 拍着照片 一路同步 坦白流露 感情和态度 其实
-          人生并非虚耗 何来尘埃飞舞
-          <sub><img src="images/quote-2.png" alt="" /></sub>
-        </p>
-      </div>
-    </div>
-  </div>
-  <!--end-free-->
-  <!-- Portfolio Starts Here -->
-  <div class="portfolios entertain_box  wow fadeInUp" data-wow-delay="0.4s" id="portfolio">
-    <div class="container">
-      <div class="portfolio-top">
-        <ul id="filters" class="clearfix">
-          <li><span class="filter active" data-filter="app photo card icon logo web">所有分类</span></li>
-          <li><span class="filter" data-filter="app">花朵</span></li>
-          <li><span class="filter" data-filter="photo">日落</span></li>
-          <li><span class="filter" data-filter="card">白天</span></li>
-        </ul>
-        <div id="portfoliolist">
-          <div class="portfolio app mix_all" data-cat="app">
-            <div class="portfolio-wrapper">
-              <a href="images/photo/large/01.jpg" class="b-link-stripe b-animate-go swipebox" title="TITLE">
-                <img src="images/photo/small/01-small.jpg" />
-                <div class="b-wrapper">
-                  <h2 class="b-animate b-from-left b-delay03">
-                    <!--[缩略图-->
-                    <ul>
-                      <!-- <li><img src="images/hrt.png" alt=""/></li> -->
-                      <li><img src="images/srch.png" alt="" /></li>
-                      <!-- <li><img src="images/rsh.png" alt=""/></li> -->
-                    </ul>
-                  </h2>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="portfolio app mix_all" data-cat="app">
-            <div class="portfolio-wrapper">
-              <a href="images/photo/large/02.jpg" class="b-link-stripe b-animate-go swipebox" title="TITLE">
-                <img src="images/photo/small/02-small.jpg" />
-                <div class="b-wrapper">
-                  <h2 class="b-animate b-from-left b-delay03">
-                    <ul>
-                      <!-- <li><img src="images/hrt.png" alt=""/></li> -->
-                      <li><img src="images/srch.png" alt="" /></li>
-                      <!-- <li><img src="images/rsh.png" alt=""/></li> -->
-                    </ul>
-                  </h2>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="portfolio app mix_all" data-cat="app">
-            <div class="portfolio-wrapper">
-              <a href="images/photo/large/03.jpg" class="b-link-stripe b-animate-go swipebox" title="TITLE">
-                <img src="images/photo/small/03-small.jpg" />
-                <div class="b-wrapper">
-                  <h2 class="b-animate b-from-left b-delay03">
-                    <ul>
-                      <!-- <li><img src="images/hrt.png" alt=""/></li> -->
-                      <li><img src="images/srch.png" alt="" /></li>
-                      <!-- <li><img src="images/rsh.png" alt=""/></li> -->
-                    </ul>
-                  </h2>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="portfolio card mix_all" data-cat="card">
-            <div class="portfolio-wrapper">
-              <a href="images/photo/large/04.jpg" class="b-link-stripe b-animate-go swipebox" title="TITLE">
-                <img src="images/photo/small/04-small.jpg" />
-                <div class="b-wrapper">
-                  <h2 class="b-animate b-from-left b-delay03">
-                    <ul>
-                      <!-- <li><img src="images/hrt.png" alt=""/></li> -->
-                      <li><img src="images/srch.png" alt="" /></li>
-                      <!-- <li><img src="images/rsh.png" alt=""/></li> -->
-                    </ul>
-                  </h2>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="portfolio card mix_all" data-cat="card">
-            <div class="portfolio-wrapper">
-              <a href="images/photo/large/05.jpg" class="b-link-stripe b-animate-go swipebox" title="TITLE">
-                <img src="images/photo/small/05-small.jpg" />
-                <div class="b-wrapper">
-                  <h2 class="b-animate b-from-left b-delay03">
-                    <ul>
-                      <!-- <li><img src="images/hrt.png" alt=""/></li> -->
-                      <li><img src="images/srch.png" alt="" /></li>
-                      <!-- <li><img src="images/rsh.png" alt=""/></li> -->
-                    </ul>
-                  </h2>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="portfolio card mix_all" data-cat="card">
-            <div class="portfolio-wrapper">
-              <a href="images/photo/large/06.jpg" class="b-link-stripe b-animate-go  swipebox" title="TITLE">
-                <img src="images/photo/small/06-small.jpg" />
-                <div class="b-wrapper">
-                  <h2 class="b-animate b-from-left b-delay03">
-                    <ul>
-                      <!-- <li><img src="images/hrt.png" alt=""/></li> -->
-                      <li><img src="images/srch.png" alt="" /></li>
-                      <!-- <li><img src="images/rsh.png" alt=""/></li> -->
-                    </ul>
-                  </h2>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="portfolio card mix_all" data-cat="card">
-            <div class="portfolio-wrapper">
-              <a href="images/photo/large/07.jpg" class="b-link-stripe b-animate-go  swipebox" title="TITLE">
-                <img src="images/photo/small/07-small.jpg" />
-                <div class="b-wrapper">
-                  <h2 class="b-animate b-from-left b-delay03">
-                    <ul>
-                      <!-- <li><img src="images/hrt.png" alt=""/></li> -->
-                      <li><img src="images/srch.png" alt="" /></li>
-                      <!-- <li><img src="images/rsh.png" alt=""/></li> -->
-                    </ul>
-                  </h2>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="portfolio photo mix_all" data-cat="phtot">
-            <div class="portfolio-wrapper">
-              <a href="images/photo/large/08.jpg" class="b-link-stripe b-animate-go  swipebox" title="TITLE">
-                <img src="images/photo/small/08-small.jpg" />
-                <div class="b-wrapper">
-                  <h2 class="b-animate b-from-left b-delay03">
-                    <ul>
-                      <!-- <li><img src="images/hrt.png" alt=""/></li> -->
-                      <li><img src="images/srch.png" alt="" /></li>
-                      <!-- <li><img src="images/rsh.png" alt=""/></li> -->
-                    </ul>
-                  </h2>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="portfolio card mix_all" data-cat="card">
-            <div class="portfolio-wrapper">
-              <a href="images/photo/large/09.jpg" class="b-link-stripe b-animate-go  swipebox" title="TITLE">
-                <img src="images/photo/small/09-small.jpg" />
-                <div class="b-wrapper">
-                  <h2 class="b-animate b-from-left b-delay03">
-                    <ul>
-                      <!-- <li><img src="images/hrt.png" alt=""/></li> -->
-                      <li><img src="images/srch.png" alt="" /></li>
-                      <!-- <li><img src="images/rsh.png" alt=""/></li> -->
-                    </ul>
-                  </h2>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="portfolio photo mix_all" data-cat="phtot">
-            <div class="portfolio-wrapper">
-              <a href="images/photo/large/10.jpg" class="b-link-stripe b-animate-go  swipebox" title="TITLE">
-                <img src="images/photo/small/10-small.jpg" />
-                <div class="b-wrapper">
-                  <h2 class="b-animate b-from-left b-delay03">
-                    <ul>
-                      <!-- <li><img src="images/hrt.png" alt=""/></li> -->
-                      <li><img src="images/srch.png" alt="" /></li>
-                      <!-- <li><img src="images/rsh.png" alt=""/></li> -->
-                    </ul>
-                  </h2>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="portfolio card mix_all" data-cat="card">
-            <div class="portfolio-wrapper">
-              <a href="images/photo/large/11.jpg" class="b-link-stripe b-animate-go  swipebox" title="TITLE">
-                <img src="images/photo/small/11-small.jpg" />
-                <div class="b-wrapper">
-                  <h2 class="b-animate b-from-left b-delay03">
-                    <ul>
-                      <!-- <li><img src="images/hrt.png" alt=""/></li> -->
-                      <li><img src="images/srch.png" alt="" /></li>
-                      <!-- <li><img src="images/rsh.png" alt=""/></li> -->
-                    </ul>
-                  </h2>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="portfolio photo mix_all" data-cat="phtot">
-            <div class="portfolio-wrapper">
-              <a href="images/photo/large/12.jpg" class="b-link-stripe b-animate-go  swipebox" title="TITLE">
-                <img src="images/photo/small/12-small.jpg" />
-                <div class="b-wrapper">
-                  <h2 class="b-animate b-from-left b-delay03">
-                    <ul>
-                      <!-- <li><img src="images/hrt.png" alt=""/></li> -->
-                      <li><img src="images/srch.png" alt="" /></li>
-                      <!-- <li><img src="images/rsh.png" alt=""/></li> -->
-                    </ul>
-                  </h2>
-                </div>
-              </a>
-            </div>
-          </div>
+      <div class="header">
+        <div class="logo">
+          <span>影集</span>
+          <!-- <a href="index.html"><img src="images/logo.png" alt="" /></a> -->
         </div>
-      </div>
-    </div>
-  </div>
-  <link rel="stylesheet" href="css/swipebox.css" />
-  <script src="js/jquery.swipebox.min.js"></script>
-  <script type="text/javascript">
-    jQuery(function ($) {
-      $('.swipebox').swipebox();
-    });
-  </script>
-  <!-- Portfolio Ends Here -->
-  <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
-  <script type="text/javascript">
-    $(function () {
-      var filterList = {
-        init: function () {
-          // MixItUp plugin
-          // http://mixitup.io
-          $('#portfoliolist').mixitup({
-            targetSelector: '.portfolio',
-            filterSelector: '.filter',
-            effects: ['fade'],
-            easing: 'snap',
-            // call the hover effect
-            onMixEnd: filterList.hoverEffect()
-          });
-        },
-
-        hoverEffect: function () {
-          // Simple parallax effect
-          $('#portfoliolist .portfolio').hover(
-            function () {
-              $(this)
-                .find('.label')
-                .stop()
-                .animate({ bottom: 0 }, 200, 'easeOutQuad');
-              $(this)
-                .find('img')
-                .stop()
-                .animate({ top: -30 }, 500, 'easeOutQuad');
-            },
-            function () {
-              $(this)
-                .find('.label')
-                .stop()
-                .animate({ bottom: -40 }, 200, 'easeInQuad');
-              $(this)
-                .find('img')
-                .stop()
-                .animate({ top: 0 }, 300, 'easeOutQuad');
-            }
-          );
-        }
-      };
-
-      // Run the show!
-      filterList.init();
-    });
-  </script>
-  <!--Blog-Starts-Here-->
-  <div class="blog">
-    <div class="container">
-      <div class="blog-main">
-        <div class="col-md-4 blog-left">
-          <div class="blog-one wow bounceInLeft" data-wow-delay="0.4s">
-            <img src="images/blog-1x.png" alt="" />
-            <h3>基本资料</h3>
-            <p>简单是自己不屑的追求，朴实是源自内心的芬芳。</p>
-          </div>
-        </div>
-        <div class="col-md-4 blog-left">
-          <div class="blog-one wow bounce" data-wow-delay="0.1s">
-            <img src="images/blog-4x.png" alt="" />
-            <h3>个人设计观</h3>
-            <p>设计应该有清晰完善的理想和目标，以及美的内在和外在。不但是企业促销的工具，更重要的是塑造形象，准确的传达文化精神。</p>
-          </div>
-        </div>
-        <!--<div class="col-md-4 blog-left active">-->
-        <div class="col-md-4 blog-left">
-          <div class="blog-one wow bounceInRight" data-wow-delay="0.4s">
-            <img src="images/blog-3.png" alt="" />
-            <h3>其他</h3>
-            <p>忠实诚信,讲原则，说到做到，决不推卸责任；有自制力，做事情始终坚持有始有终，从不半途而废；用满分的热情和精力投入到工作中；平易近人。</p>
-          </div>
+        <div class="navigation">
+          <span class="menu"></span>
+          <ul class="navig">
+            <li><a href="index.html" class="scroll">主页</a><span>|</span></li>
+            <li><a href="#portfolio" class="scroll">作品展示</a><span>|</span></li>
+            <li><a href="#contact" class="scroll">摄影漫谈</a></li>
+          </ul>
         </div>
         <div class="clearfix"></div>
       </div>
+      <div class="banner-bottom">
+        <ul>
+          <li>
+            <a href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?summary=诺冲的影集&url=https://photography.luzhaoyang.com&pics=picurl"
+              ><span class="twt"> </span
+            ></a>
+          </li>
+          <li>
+            <a href="http://v.t.sina.com.cn/share/share.php?title=诺冲的影集&url=https://photography.luzhaoyang.com&content=utf-8&sourceUrl=url&pic=picurl"
+              ><span class="t"> </span
+            ></a>
+          </li>
+          <li>
+            <a
+              href="http://connect.qq.com/widget/shareqq/index.html?url=https://photography.luzhaoyang.com&sharesource=qzone&title=诺冲的影集&pics=分享图片地址&summary=分享描述&desc=你的分享简述`"
+              ><span class="g"> </span
+            ></a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-  <!--Blog-Ends-Here-->
-  <!--Contact-Starts-Here-->
-  <!-- <div class="contact" id="contact">
+    <!-- script-for-menu -->
+    <script>
+      $('span.menu').click(function() {
+        $(' ul.navig').slideToggle('slow', function() {});
+      });
+    </script>
+    <!-- script-for-menu -->
+    <!--Slider-Starts-Here-->
+    <script src="js/responsiveslides.min.js"></script>
+    <script>
+      // You can also use "$(window).load(function() {"
+      $(function() {
+        // Slideshow 4
+        $('#slider4').responsiveSlides({
+          auto: true,
+          pager: false,
+          nav: true,
+          speed: 500,
+          namespace: 'callbacks',
+          before: function() {
+            $('.events').append('<li>before event fired.</li>');
+          },
+          after: function() {
+            $('.events').append('<li>after event fired.</li>');
+          }
+        });
+      });
+    </script>
+    <!--End-slider-script-->
+    <!--end-banner-->
+    <!--start-free-->
+    <div class="free wow bounce" data-wow-delay="0.1s">
+      <div class="container">
+        <div class="free-main">
+          <h1>对焦 她的爱</h1>
+          <p>
+            <sup><img src="images/quote-1.png" alt=""/></sup>
+            港湾晚灯 山顶破晓 摘下怀念 记住美妙
+            <sub><img src="images/quote-2.png" alt=""/></sub>
+          </p>
+          <p>
+            <sup><img src="images/quote-1.png" alt=""/></sup>
+            留住 温度 速度 温柔和愤怒 凝住 今日 怎样 好 捉紧 生命浓度 坦白流露 感情和态度 停下时光 静止衰老妙
+            <sub><img src="images/quote-2.png" alt=""/></sub>
+          </p>
+          <p>
+            <sup><img src="images/quote-1.png" alt=""/></sup>
+            音乐 话剧 诗词和舞蹈 揉合 生命 千样好 摄入相部 绚烂如电 虚幻如雾 哀愁和仰慕 游乐人间 活得好 谈何容易 拍着照片 一路同步 坦白流露 感情和态度 其实
+            人生并非虚耗 何来尘埃飞舞
+            <sub><img src="images/quote-2.png" alt=""/></sub>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--end-free-->
+    <!-- Portfolio Starts Here -->
+    <div class="portfolios entertain_box  wow fadeInUp" data-wow-delay="0.4s" id="portfolio">
+      <div class="container">
+        <div class="portfolio-top">
+          <ul id="filters" class="clearfix">
+            <li><span class="filter active" data-filter="app photo card icon logo web">所有分类</span></li>
+            <li><span class="filter" data-filter="app">花朵</span></li>
+            <li><span class="filter" data-filter="photo">日落</span></li>
+            <li><span class="filter" data-filter="card">白天</span></li>
+          </ul>
+          <div id="portfoliolist">
+            <div class="portfolio app mix_all" data-cat="app">
+              <div class="portfolio-wrapper">
+                <a href="images/photo/large/01.jpg" class="b-link-stripe b-animate-go swipebox" title="TITLE">
+                  <img src="images/photo/small/01-small.jpg" />
+                  <div class="b-wrapper">
+                    <h2 class="b-animate b-from-left b-delay03">
+                      <!--[缩略图-->
+                      <ul>
+                        <!-- <li><img src="images/hrt.png" alt=""/></li> -->
+                        <li><img src="images/srch.png" alt="" /></li>
+                        <!-- <li><img src="images/rsh.png" alt=""/></li> -->
+                      </ul>
+                    </h2>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="portfolio app mix_all" data-cat="app">
+              <div class="portfolio-wrapper">
+                <a href="images/photo/large/02.jpg" class="b-link-stripe b-animate-go swipebox" title="TITLE">
+                  <img src="images/photo/small/02-small.jpg" />
+                  <div class="b-wrapper">
+                    <h2 class="b-animate b-from-left b-delay03">
+                      <ul>
+                        <!-- <li><img src="images/hrt.png" alt=""/></li> -->
+                        <li><img src="images/srch.png" alt="" /></li>
+                        <!-- <li><img src="images/rsh.png" alt=""/></li> -->
+                      </ul>
+                    </h2>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="portfolio app mix_all" data-cat="app">
+              <div class="portfolio-wrapper">
+                <a href="images/photo/large/03.jpg" class="b-link-stripe b-animate-go swipebox" title="TITLE">
+                  <img src="images/photo/small/03-small.jpg" />
+                  <div class="b-wrapper">
+                    <h2 class="b-animate b-from-left b-delay03">
+                      <ul>
+                        <!-- <li><img src="images/hrt.png" alt=""/></li> -->
+                        <li><img src="images/srch.png" alt="" /></li>
+                        <!-- <li><img src="images/rsh.png" alt=""/></li> -->
+                      </ul>
+                    </h2>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="portfolio card mix_all" data-cat="card">
+              <div class="portfolio-wrapper">
+                <a href="images/photo/large/04.jpg" class="b-link-stripe b-animate-go swipebox" title="TITLE">
+                  <img src="images/photo/small/04-small.jpg" />
+                  <div class="b-wrapper">
+                    <h2 class="b-animate b-from-left b-delay03">
+                      <ul>
+                        <!-- <li><img src="images/hrt.png" alt=""/></li> -->
+                        <li><img src="images/srch.png" alt="" /></li>
+                        <!-- <li><img src="images/rsh.png" alt=""/></li> -->
+                      </ul>
+                    </h2>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="portfolio card mix_all" data-cat="card">
+              <div class="portfolio-wrapper">
+                <a href="images/photo/large/05.jpg" class="b-link-stripe b-animate-go swipebox" title="TITLE">
+                  <img src="images/photo/small/05-small.jpg" />
+                  <div class="b-wrapper">
+                    <h2 class="b-animate b-from-left b-delay03">
+                      <ul>
+                        <!-- <li><img src="images/hrt.png" alt=""/></li> -->
+                        <li><img src="images/srch.png" alt="" /></li>
+                        <!-- <li><img src="images/rsh.png" alt=""/></li> -->
+                      </ul>
+                    </h2>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="portfolio card mix_all" data-cat="card">
+              <div class="portfolio-wrapper">
+                <a href="images/photo/large/06.jpg" class="b-link-stripe b-animate-go  swipebox" title="TITLE">
+                  <img src="images/photo/small/06-small.jpg" />
+                  <div class="b-wrapper">
+                    <h2 class="b-animate b-from-left b-delay03">
+                      <ul>
+                        <!-- <li><img src="images/hrt.png" alt=""/></li> -->
+                        <li><img src="images/srch.png" alt="" /></li>
+                        <!-- <li><img src="images/rsh.png" alt=""/></li> -->
+                      </ul>
+                    </h2>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="portfolio card mix_all" data-cat="card">
+              <div class="portfolio-wrapper">
+                <a href="images/photo/large/07.jpg" class="b-link-stripe b-animate-go  swipebox" title="TITLE">
+                  <img src="images/photo/small/07-small.jpg" />
+                  <div class="b-wrapper">
+                    <h2 class="b-animate b-from-left b-delay03">
+                      <ul>
+                        <!-- <li><img src="images/hrt.png" alt=""/></li> -->
+                        <li><img src="images/srch.png" alt="" /></li>
+                        <!-- <li><img src="images/rsh.png" alt=""/></li> -->
+                      </ul>
+                    </h2>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="portfolio photo mix_all" data-cat="phtot">
+              <div class="portfolio-wrapper">
+                <a href="images/photo/large/08.jpg" class="b-link-stripe b-animate-go  swipebox" title="TITLE">
+                  <img src="images/photo/small/08-small.jpg" />
+                  <div class="b-wrapper">
+                    <h2 class="b-animate b-from-left b-delay03">
+                      <ul>
+                        <!-- <li><img src="images/hrt.png" alt=""/></li> -->
+                        <li><img src="images/srch.png" alt="" /></li>
+                        <!-- <li><img src="images/rsh.png" alt=""/></li> -->
+                      </ul>
+                    </h2>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="portfolio card mix_all" data-cat="card">
+              <div class="portfolio-wrapper">
+                <a href="images/photo/large/09.jpg" class="b-link-stripe b-animate-go  swipebox" title="TITLE">
+                  <img src="images/photo/small/09-small.jpg" />
+                  <div class="b-wrapper">
+                    <h2 class="b-animate b-from-left b-delay03">
+                      <ul>
+                        <!-- <li><img src="images/hrt.png" alt=""/></li> -->
+                        <li><img src="images/srch.png" alt="" /></li>
+                        <!-- <li><img src="images/rsh.png" alt=""/></li> -->
+                      </ul>
+                    </h2>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="portfolio photo mix_all" data-cat="phtot">
+              <div class="portfolio-wrapper">
+                <a href="images/photo/large/10.jpg" class="b-link-stripe b-animate-go  swipebox" title="TITLE">
+                  <img src="images/photo/small/10-small.jpg" />
+                  <div class="b-wrapper">
+                    <h2 class="b-animate b-from-left b-delay03">
+                      <ul>
+                        <!-- <li><img src="images/hrt.png" alt=""/></li> -->
+                        <li><img src="images/srch.png" alt="" /></li>
+                        <!-- <li><img src="images/rsh.png" alt=""/></li> -->
+                      </ul>
+                    </h2>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="portfolio card mix_all" data-cat="card">
+              <div class="portfolio-wrapper">
+                <a href="images/photo/large/11.jpg" class="b-link-stripe b-animate-go  swipebox" title="TITLE">
+                  <img src="images/photo/small/11-small.jpg" />
+                  <div class="b-wrapper">
+                    <h2 class="b-animate b-from-left b-delay03">
+                      <ul>
+                        <!-- <li><img src="images/hrt.png" alt=""/></li> -->
+                        <li><img src="images/srch.png" alt="" /></li>
+                        <!-- <li><img src="images/rsh.png" alt=""/></li> -->
+                      </ul>
+                    </h2>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="portfolio photo mix_all" data-cat="phtot">
+              <div class="portfolio-wrapper">
+                <a href="images/photo/large/12.jpg" class="b-link-stripe b-animate-go  swipebox" title="TITLE">
+                  <img src="images/photo/small/12-small.jpg" />
+                  <div class="b-wrapper">
+                    <h2 class="b-animate b-from-left b-delay03">
+                      <ul>
+                        <!-- <li><img src="images/hrt.png" alt=""/></li> -->
+                        <li><img src="images/srch.png" alt="" /></li>
+                        <!-- <li><img src="images/rsh.png" alt=""/></li> -->
+                      </ul>
+                    </h2>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <link rel="stylesheet" href="css/swipebox.css" />
+    <script src="js/jquery.swipebox.min.js"></script>
+    <script type="text/javascript">
+      jQuery(function($) {
+        $('.swipebox').swipebox();
+      });
+    </script>
+    <!-- Portfolio Ends Here -->
+    <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        var filterList = {
+          init: function() {
+            // MixItUp plugin
+            // http://mixitup.io
+            $('#portfoliolist').mixitup({
+              targetSelector: '.portfolio',
+              filterSelector: '.filter',
+              effects: ['fade'],
+              easing: 'snap',
+              // call the hover effect
+              onMixEnd: filterList.hoverEffect()
+            });
+          },
+
+          hoverEffect: function() {
+            // Simple parallax effect
+            $('#portfoliolist .portfolio').hover(
+              function() {
+                $(this)
+                  .find('.label')
+                  .stop()
+                  .animate({ bottom: 0 }, 200, 'easeOutQuad');
+                $(this)
+                  .find('img')
+                  .stop()
+                  .animate({ top: -30 }, 500, 'easeOutQuad');
+              },
+              function() {
+                $(this)
+                  .find('.label')
+                  .stop()
+                  .animate({ bottom: -40 }, 200, 'easeInQuad');
+                $(this)
+                  .find('img')
+                  .stop()
+                  .animate({ top: 0 }, 300, 'easeOutQuad');
+              }
+            );
+          }
+        };
+
+        // Run the show!
+        filterList.init();
+      });
+    </script>
+    <!--Blog-Starts-Here-->
+    <div class="blog">
+      <div class="container">
+        <div class="blog-main">
+          <div class="col-md-4 blog-left">
+            <div class="blog-one wow bounceInLeft" data-wow-delay="0.4s">
+              <img src="images/blog-1x.png" alt="" />
+              <h3>基本资料</h3>
+              <p>简单是自己不屑的追求，朴实是源自内心的芬芳。</p>
+            </div>
+          </div>
+          <div class="col-md-4 blog-left">
+            <div class="blog-one wow bounce" data-wow-delay="0.1s">
+              <img src="images/blog-4x.png" alt="" />
+              <h3>个人设计观</h3>
+              <p>设计应该有清晰完善的理想和目标，以及美的内在和外在。不但是企业促销的工具，更重要的是塑造形象，准确的传达文化精神。</p>
+            </div>
+          </div>
+          <!--<div class="col-md-4 blog-left active">-->
+          <div class="col-md-4 blog-left">
+            <div class="blog-one wow bounceInRight" data-wow-delay="0.4s">
+              <img src="images/blog-3.png" alt="" />
+              <h3>其他</h3>
+              <p>忠实诚信,讲原则，说到做到，决不推卸责任；有自制力，做事情始终坚持有始有终，从不半途而废；用满分的热情和精力投入到工作中；平易近人。</p>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+    <!--Blog-Ends-Here-->
+    <!--Contact-Starts-Here-->
+    <!-- <div class="contact" id="contact">
 		<div class="container">
 			<div class="contact-main">
 				<div class="col-md-6 contact-left wow bounceInLeft" data-wow-delay="0.4s">
@@ -481,46 +485,45 @@
 			</div>
 		</div>
 	</div> -->
-  <!--Contact-Ends-Here-->
-  <!--Footer-Starts-Here-->
-  <div class="footer">
-    <div class="conatiner">
-      <div class="footer-text wow bounce" data-wow-delay="0.1s">
-        <p>COPYRIGHT BY <a href="http://w3layouts.com/"> NUOCHONG</a></p>
-        <ul>
-          <li>
-            <a
-              href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?summary=诺冲的影集&url=https://photography.luzhaoyang.com&pics=picurl"><span
-                class="twt"> </span></a>
-          </li>
-          <li>
-            <a
-              href="http://v.t.sina.com.cn/share/share.php?title=诺冲的影集&url=https://photography.luzhaoyang.com&content=utf-8&sourceUrl=url&pic=picurl"><span
-                class="t"> </span></a>
-          </li>
-          <li>
-            <a
-              href="http://connect.qq.com/widget/shareqq/index.html?url=https://photography.luzhaoyang.com&sharesource=qzone&title=诺冲的影集&pics=分享图片地址&summary=分享描述&desc=你的分享简述`"><span
-                class="g"> </span></a>
-          </li>
-        </ul>
+    <!--Contact-Ends-Here-->
+    <!--Footer-Starts-Here-->
+    <div class="footer">
+      <div class="conatiner">
+        <div class="footer-text wow bounce" data-wow-delay="0.1s">
+          <p>COPYRIGHT BY <a href="http://w3layouts.com/"> NUOCHONG</a></p>
+          <ul>
+            <li>
+              <a href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?summary=诺冲的影集&url=https://photography.luzhaoyang.com&pics=picurl"
+                ><span class="twt"> </span
+              ></a>
+            </li>
+            <li>
+              <a href="http://v.t.sina.com.cn/share/share.php?title=诺冲的影集&url=https://photography.luzhaoyang.com&content=utf-8&sourceUrl=url&pic=picurl"
+                ><span class="t"> </span
+              ></a>
+            </li>
+            <li>
+              <a
+                href="http://connect.qq.com/widget/shareqq/index.html?url=https://photography.luzhaoyang.com&sharesource=qzone&title=诺冲的影集&pics=分享图片地址&summary=分享描述&desc=你的分享简述`"
+                ><span class="g"> </span
+              ></a>
+            </li>
+          </ul>
+        </div>
       </div>
+      <script type="text/javascript">
+        $(document).ready(function() {
+          // var defaults = {
+          //   containerID: 'toTop', // fading element id
+          //   containerHoverID: 'toTopHover', // fading element hover id
+          //   scrollSpeed: 1200,
+          //   easingType: 'linear'
+          // };
+          $().UItoTop({ easingType: 'easeOutQuart' });
+        });
+      </script>
+      <a href="#home" id="toTop" class="scroll"><span id="toTopHover"></span></a>
     </div>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        // var defaults = {
-        //   containerID: 'toTop', // fading element id
-        //   containerHoverID: 'toTopHover', // fading element hover id
-        //   scrollSpeed: 1200,
-        //   easingType: 'linear'
-        // };
-        $().UItoTop({ easingType: 'easeOutQuart' });
-      });
-    </script>
-    <a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;">
-      </span></a>
-  </div>
-  <!--Footer-Ends-Here-->
-</body>
-
+    <!--Footer-Ends-Here-->
+  </body>
 </html>
